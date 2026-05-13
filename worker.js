@@ -53,8 +53,7 @@ const RANDOM_PROMPTS = [
 
 // Passwords for authentication
 // demo: const PASSWORDS = ['P@ssw0rd']
-const PASSWORDS = ['831203']
-
+const PASSWORDS = env.PASSWORDS ? env.PASSWORDS.split(',') : [];
 
 export default {
   async fetch(request, env) {
