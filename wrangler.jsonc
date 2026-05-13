@@ -6,7 +6,7 @@
         "binding": "AI"
     },
     "assets": {
-      "directory": "./"
+      "directory": "public"
     },
     "observability": {
         "logs": {
