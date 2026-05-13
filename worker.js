@@ -240,7 +240,12 @@ export default {
           }
         });
       } else {
-        return new Response('Not Found', { status: 404 });
+        // 静态文件自动处理：public/*, *.png, *.jpg, *.css, *.js 等
+        const asset = await fetch(request);
+        if (asset.status === 404) {
+          return new Response('Not Found', { status: 404 });
+        }
+        return asset;
       }
     } catch (error) {
       console.error('Worker error:', error);
