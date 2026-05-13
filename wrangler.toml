@@ -1,11 +1,13 @@
-name = "ai-image-worker"
+name = "text2img"
 main = "worker.js"
-compatibility_date = "2025-01-01"
+compatibility_date = "2026-05-13"
 
-# 绑定 Cloudflare AI 服务
-ai = { binding = "AI" }
+# AI 绑定（官方要求必须写 [ai] + remote = true）
+[ai]
+binding = "AI"
+remote = true
 
-# 允许引入 html 文件
-rules = [
-  { type = "Text", globs = ["**/*.html"] }
-]
+# 静态文本规则（正确导入 index.html）
+[[rules]]
+type = "Text"
+globs = ["**/*.html"]
