@@ -1,0 +1,11 @@
+name = "ai-image-worker"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# 绑定 Cloudflare AI 服务
+ai = { binding = "AI" }
+
+# 允许引入 html 文件
+rules = [
+  { type = "Text", globs = ["**/*.html"] }
+]
