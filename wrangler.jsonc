@@ -1,14 +1,14 @@
 {
-	"name": "text2img",
-	"main": "worker.js",
-	"compatibility_date": "2026-05-13",
-	"ai": {
-	    "binding": "AI"
-	  },
-	"observability": {
-	    "logs": {
-	      "enabled": true,
-	      "invocation_logs": true
-	    }
-	  }
+    "name": "text2img",
+    "main": "worker.js",
+    "compatibility_date": "2026-05-13",
+    "ai": {
+        "binding": "AI"
+    },
+    "observability": {
+        "logs": {
+            "enabled": true,
+            "invocation_logs": true
+        }
+    }
 }
