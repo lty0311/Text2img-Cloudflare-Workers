@@ -5,6 +5,9 @@
     "ai": {
         "binding": "AI"
     },
+    "assets": {
+      "directory": "./"
+    },
     "observability": {
         "logs": {
             "enabled": true,
